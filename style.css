@@ -312,9 +312,11 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: rgba(163, 163, 163, 0.4) 1px solid;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12),
+                0 10px 20px rgba(0,0,0,0.08),
+                0 20px 40px rgba(0,0,0,0.05);
 }
 
 .section-container {
