@@ -142,6 +142,32 @@ a:hover {
 }
 
 
+.hamburger-menu .menu-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3 ease-out;
+}
+
+.hamburger-icon.open .menu-links {
+    max-height: 500px;
+}
+
+/* (C) (Optional) Staggered fade‑in for each link */
+.hamburger-menu .menu-links li {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition-delay: 0.1s;      /* base delay */
+}
+.hamburger-menu.open .menu-links li {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hamburger-menu.open .menu-links li:nth-child(2) { transition-delay: 0.15s; }
+.hamburger-menu.open .menu-links li:nth-child(3) { transition-delay: 0.20s; }
+.hamburger-menu.open .menu-links li:nth-child(4) { transition-delay: 0.25s; }
+
+
 .menu-links a {
     display: block;
     padding: 10px;
