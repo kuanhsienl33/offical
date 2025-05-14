@@ -319,6 +319,10 @@ section {
                 0 20px 40px rgba(0,0,0,0.05);
 }
 
+.text-container {
+    margin-top: 1rem;
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
