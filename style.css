@@ -108,7 +108,8 @@ a:hover {
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all;
+    transition: all 0.3s;
+    transform: translateY(-10px);
 }
 
 .menu-links a {
