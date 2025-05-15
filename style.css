@@ -153,6 +153,16 @@ a:hover {
     transform: none;
 }
 
+.hamburger-icon:hover .menu-links {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.menu-links a:hover {
+    color: grey;
+}
+
 /* SECTIONS */
 
 section {
