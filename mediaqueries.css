@@ -107,4 +107,31 @@
     .text-container {
         text-align: justify;
     }
+    /* Closed state (default) */
+    .menu-links {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    /* Open state */
+    .hamburger-menu.open .menu-links {
+        max-height: 500px;    /* or whatever fits your menu */
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    /* Icon → “X” transition */
+    .hamburger-menu.open .hamburger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px,5px);
+    }
+    .hamburger-menu.open .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.open .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px,-5px);
+    }
 }
