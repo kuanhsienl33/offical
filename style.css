@@ -130,15 +130,15 @@ a:hover {
     max-height: 300px;
 }
 
-.hamburger-icon:hover span:first-child {
+.hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon:hover span:nth-child(2) {
+.hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-icon:hover span:last-child {
+.hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
@@ -154,7 +154,7 @@ a:hover {
     transform: none;
 }
 
-.hamburger-icon:hover .menu-links {
+.hamburger-menu:hover .menu-links {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
